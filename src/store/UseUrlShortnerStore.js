@@ -4,7 +4,7 @@ import {axiosInstance} from "../axios/axiosInstance"
 
 export const useUrlShortnerStore = create((set, get) => ({
     UserData: [],
-    IsLoadingGroup:true,
+    IsLoadingGroup:false,
     IsLoadingInput:false,
     IsCreatingLink:true,
     CurrentLink:null,
