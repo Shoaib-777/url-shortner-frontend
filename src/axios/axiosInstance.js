@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create(
-    {baseURL:import.meta.env.MODE==="development" ? "http://localhost:8000/api":"https://link-sh.onrender.com",withCredentials:true,}
+    {baseURL:import.meta.env.MODE==="development" ? "http://localhost:8000/api":"https://link-sh.onrender.com/api",withCredentials:true,}
 )
 
 export const RedirectUrl = import.meta.env.MODE==="development" ? "http://localhost:8000":"https://link-sh.onrender.com"
